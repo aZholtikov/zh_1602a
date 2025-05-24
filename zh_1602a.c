@@ -45,7 +45,7 @@ esp_err_t zh_1602a_init(const zh_1602a_init_config_t *config)
     ZH_1602A_CHECK(err == ESP_OK, ESP_FAIL, "1602A initialization failed. GPIO initialization failed.");
     _zh_1602a_lcd_init();
     _is_initialized = true;
-    ZH_1602A_LOGI("CD74HC4067 initialization completed successfully in %d bit mode.", (_is_8bit_work_mode == true) ? 8 : 4);
+    ZH_1602A_LOGI("1602A initialization completed successfully in %d bit mode.", (_is_8bit_work_mode == true) ? 8 : 4);
     return ESP_OK;
 }
 
